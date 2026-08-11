@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Owen Cassidy</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @keyframes gradient-shift {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+
+        .animate-gradient {
+          background-size: 200% 200%;
+          animation: gradient-shift 6s ease infinite;
+        }
+    </style>
 </head>
 <body>
     <!-- Comment syntax cuz im forgetful ;-; -->
@@ -24,5 +36,8 @@
     </nav>
     <hr class="h-1.25 border-0 bg-gradient-to-r from-red-800 via-purple-500 to-indigo-900 transition-colors duration-300 ease-in-out group-hover:from-indigo-700 group-hover:via-purple-700 group-hover:to-red-600 my-3 rounded"/>
     </div>
+<h1>Welcome!</h1>
+<h3>My name is <span class="h-64 w-full bg-gradient-to-r from-red-500 via-purple-500 to-indigo-500 animate-gradient">Owen Cassidy</span> and i am a student at westwood high school</h3>
+
 </body>
 </html>
