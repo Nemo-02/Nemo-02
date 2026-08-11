@@ -21,7 +21,13 @@
             </div>
         </div>
     </nav>
-    <hr class="h-1 border-0 bg-gradient-to-r from-red-800 to-indigo-900 my-4"/>
-    <iframe src="OwenCassidyResume.html" width="100%" height="600px"  title="Embedded Content"></iframe>
+    <hr class="h-2 border-0 bg-gradient-to-r from-red-800 to-indigo-900 my-4"/>
+    <iframe src="OwenCassidyResume.html" 
+        id="myIframe"
+        scrolling="no" 
+        style="width: 100%; border: none;"
+        onload="this.style.height = this.contentWindow.document.body.scrollHeight + 'px';"
+        title="Embedded Content">
+    </iframe>
 </body>
 </html>
