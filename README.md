@@ -1,5 +1,7 @@
 ## Hi there 👋
 
+I am a student at Westwood High school in Austin TX with interest in stem and computer science!
+
 <!--
 **Nemo-02/Nemo-02** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
