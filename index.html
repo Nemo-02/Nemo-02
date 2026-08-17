@@ -17,6 +17,17 @@
           animation: gradient-shift 6s ease infinite;
         }
     </style>
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+    </style>
+
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+    </script>
 </head>
 <body>
     <!-- Comment syntax cuz im forgetful ;-; -->
@@ -37,7 +48,7 @@
 <div class="flex justify-center flex-nowrap">
     <div>
         <h1 class="text-4xl my-3">Welcome!</h1>
-        <h3 class="text-1xl">My name is <span class="h-64 w-full bg-gradient-to-r from-red-500 via-purple-500 to-indigo-500 animate-gradient bg-clip-text text-transparent font-extrabold ">Owen Cassidy</span>. and I am a student at Westwood high school. I am interested in software and electrical engineering and I have experience in:</h3>
+        <h3 class="text-1xl">My name is <span class="h-64 w-full bg-gradient-to-r from-red-500 via-purple-500 to-indigo-500 animate-gradient bg-clip-text text-transparent font-extrabold ">Owen Cassidy</span>. and I am a student at Westwood High School. I am interested in software and electrical engineering and I have experience in:</h3>
         <div class="mx-auto px-4">
             <div class="relative flex h-16 items-center justify-between">
                 <div class="hidden md:flex items-center space-x-8">
